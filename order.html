@@ -248,7 +248,7 @@
 
             // Загружаем данные о продукте из Firebase
             if (productType && productId) {
-                const productRef = database.ref(`MysteryMatters/Orders/${productType}/${productType} - ${productId}`);
+                const productRef = database.ref(`Mystery Matters/Orders/${productType}/${productType} - ${productId}`);
                 
                 productRef.once('value').then((snapshot) => {
                     const productData = snapshot.val();
@@ -388,3 +388,4 @@
     </script>
 </body>
 </html>
+

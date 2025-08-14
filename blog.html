@@ -282,7 +282,7 @@
 		    // Сначала загружаем курс
                     await loadExchangeRate();
 		       
-                    const snapshot = await database.ref('MysteryMatters/Orders').once('value');
+                    const snapshot = await database.ref('Mystery Matters/Orders').once('value');
                     const data = snapshot.val();
                     
                     if (!data) {
@@ -333,4 +333,5 @@
      </script>
 </body>
 </html>
+
 
